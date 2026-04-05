@@ -131,6 +131,16 @@ const mentors = [
     roleColor: 'text-red-600 dark:text-red-400',
     overlayColor: 'from-bit-red/40',
   },
+  {
+    name: 'Pratik Ghosh',
+    role: 'Python @ Bit by Bit, Ex-CS @ SP',
+    image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/pratik_profile.jpeg',
+    quote: "Knowledge is like power — it grows the more you share it.",
+    expertise: ['Python', 'AI'],
+    borderColor: 'border-t-bit-green',
+    roleColor: 'text-green-600 dark:text-green-400',
+    overlayColor: 'from-bit-green/40',
+  },
 ];
 
 export function MentorsSection() {
