@@ -124,7 +124,7 @@ export function PartnersPage() {
           {/* Important Partners */}
           <div>
             <h2 className="text-3xl font-display font-bold mb-8 text-bit-dark dark:text-white text-center">
-              Important Partners
+              Key Partners
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {imptPartners.map((partner, index) => (
@@ -167,6 +167,9 @@ export function PartnersPage() {
                 </div>
               ))}
             </div>
+            <br />
+            <br />
+            <br />
           </div>
 
           {/* Supporting Partners */}
