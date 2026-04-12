@@ -141,6 +141,16 @@ const mentors = [
     roleColor: 'text-green-600 dark:text-green-400',
     overlayColor: 'from-bit-green/40',
   },
+  {
+    name: 'Joel Lim',
+    role: 'Python @ Bit by Bit, Ex-Cybersecurity @ NYP',
+    image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/joel_profile.jpeg',
+    quote: "Programming is the closest thing we have to real-world magic; I tutor because I want to help more people learn how to cast the spells.",
+    expertise: ['Python', 'Security'],
+    borderColor: 'border-t-bit-lavender',
+    roleColor: 'text-purple-600 dark:text-purple-400',
+    overlayColor: 'from-bit-lavender/40',
+  },
 ];
 
 export function MentorsSection() {
