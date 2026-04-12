@@ -8,6 +8,30 @@ const mainPartner = {
   color: 'from-bit-lavender to-bit-red',
 };
 
+const imptPartners = [
+  {
+    name: 'SGPO',
+    description: 'The Singapore Government Partnerships Office (SGPO) helps every citizen and groundup group play a part in shaping our country\'s future, providing crucial support for our mission.',
+    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/sgpo.jpeg',
+    website: 'https://sgpo.gov.sg',
+    color: 'from-bit-turquoise to-bit-green',
+  },
+  {
+    name: '*SCAPE',
+    description: '*SCAPE is a unique blend of retail and community space, and a vibrant hub where youth gather to create, connect, and grow. As venue partner, they play an important role in the success of our sessions.',
+    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/scape.png',
+    website: 'https://www.scape.sg',
+    color: 'from-bit-red to-bit-lavender',
+  },
+  {
+    name: 'Educado SDC',
+    description: 'As a fellow groundup aiming to bring high-quality tuition to all secondary and JC students for free, Educado\'s mission aligns closely with ours.',
+    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/educado.jpeg',
+    website: 'https://sites.google.com/view/project-educado/home?authuser=0',
+    color: 'from-bit-lavender to-bit-turquoise',
+  },
+];
+
 const supportingPartners = [
   {
     name: 'NVPC',
@@ -94,6 +118,54 @@ export function PartnersPage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Important Partners */}
+          <div>
+            <h2 className="text-3xl font-display font-bold mb-8 text-bit-dark dark:text-white text-center">
+              Important Partners
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {imptPartners.map((partner, index) => (
+                <div 
+                  key={index}
+                  className="glass rounded-2xl overflow-hidden border border-white/60 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
+                >
+                  {/* Logo Section */}
+                  <div className={`relative p-8 bg-gradient-to-br ${partner.color} flex items-center justify-center min-h-[180px]`}>
+                    <div className="absolute inset-0 opacity-10">
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full blur-2xl"></div>
+                    </div>
+                    <div className="relative bg-white rounded-xl p-6 shadow-lg w-full">
+                      <img 
+                        src={partner.logo} 
+                        alt={`${partner.name} logo`}
+                        className="w-full h-20 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="p-6 bg-white/40 dark:bg-gray-800/40 flex flex-col flex-grow">
+                    <h3 className="text-xl font-display font-bold mb-3 text-bit-dark dark:text-white">
+                      {partner.name}
+                    </h3>
+                    <p className="text-sm text-bit-dark/70 dark:text-gray-400 leading-relaxed mb-4 flex-grow">
+                      {partner.description}
+                    </p>
+                    <a
+                      href={partner.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-bit-lavender hover:text-violet-600 font-bold text-sm transition-colors"
+                    >
+                      Learn More
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
