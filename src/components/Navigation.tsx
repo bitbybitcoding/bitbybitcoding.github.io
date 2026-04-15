@@ -51,11 +51,11 @@ export function Navigation() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'About', path: '/#about', scrollTo: 'about' },
+    { name: 'Tutors', path: '/#mentors', scrollTo: 'mentors' },
     { name: 'Pathways', path: '/#/pathways' },
     { name: 'Blog', path: '/#/blog' },
     { name: 'Questions?', path: '/#/faq' },
-    { name: 'Tutors', path: '/#mentors', scrollTo: 'mentors' },
-    { name: 'About', path: '/#about', scrollTo: 'about' },
   ];
 
   const handleNavClick = (link: typeof navLinks[0], e: React.MouseEvent) => {
