@@ -68,7 +68,7 @@ const mentors = [
     quote: "Quantum Computing Researcher & Hardware Security Engineer who loves Monster Energy, motorbikes and lockpicking.",
     expertise: ['C++', 'Cybersecurity'],
     borderColor: 'border-t-bit-lavender',
-    roleColor: 'text-lavender-600 dark:text-lavender-400',
+    roleColor: 'text-purple-600 dark:text-purple-400',
     overlayColor: 'from-bit-lavender/40',
   },
   {
