@@ -151,6 +151,16 @@ const mentors = [
     roleColor: 'text-purple-600 dark:text-purple-400',
     overlayColor: 'from-bit-lavender/40',
   },
+  {
+    name: 'Renae Gan',
+    role: 'C, C# @ Bit by Bit, Engineering @ NP',
+    image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/renae_profile.jpeg',
+    quote: "Through teaching others how to code, I hope that I can provide the opportunity for students to derive satisfaction from seeing their code work wonders for them!",
+    expertise: ['C#', 'SQL'],
+    borderColor: 'border-t-bit-turquoise',
+    roleColor: 'text-teal-600 dark:text-teal-400',
+    overlayColor: 'from-bit-turquoise/40',
+  },
 ];
 
 export function MentorsSection() {
