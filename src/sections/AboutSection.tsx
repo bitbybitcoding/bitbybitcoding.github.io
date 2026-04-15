@@ -28,8 +28,8 @@ export function AboutSection() {
             <div className="absolute -inset-2 bg-gradient-to-r from-bit-lavender to-bit-turquoise rounded-2xl blur-lg opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative w-full aspect-video rounded-xl bg-white dark:bg-gray-800 overflow-hidden border border-white/50 dark:border-gray-700 shadow-inner">
               <img 
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" 
-                alt="Student coding on laptop"
+                src="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/bootcamp_photo.jpeg" 
+                alt="BbB March Bootcamp Photo"
                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
               />
             </div>
