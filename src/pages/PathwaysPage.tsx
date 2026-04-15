@@ -216,7 +216,7 @@ export function PathwaysPage() {
                 <div>
                   <h4 className="text-2xl font-display font-bold text-bit-dark dark:text-white">Free</h4>
                   <p className="text-sm text-bit-dark/60 dark:text-gray-400 mt-1 font-body leading-snug">
-                    Our curriculum is completely free for all youths aged 10-18 who are passionate about learning to code, and eager to use their coding skills to make a difference.
+                    Our curriculum is completely free for all youths aged 13-18 who are passionate about learning to code, and eager to use their coding skills to make a difference.
                   </p>
                 </div>
               </div>
