@@ -56,6 +56,16 @@ const supportingPartners = [
   },
 ];
 
+const govtPartners = [
+  {
+    name: 'MCCY',
+    description: 'The Ministry of Culture, Community and the Youth is responsible for the formulation and implementation of policies related to the arts, sports, youth and community in Singapore. They support us through SGPO and *SCAPE.',
+    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/MCCY.jpeg',
+    website: 'https://www.mccy.gov.sg',
+    color: 'from-bit-turquoise to-bit-green',
+  },
+];
+
 export function PartnersPage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -220,6 +230,57 @@ export function PartnersPage() {
             </div>
           </div>
 
+          {/* Government Partners */}
+          <div>
+            <h2 className="text-3xl font-display font-bold mb-8 text-bit-dark dark:text-white text-center">
+              Government Partners
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {govtPartners.map((partner, index) => (
+                <div 
+                  key={index}
+                  className="glass rounded-2xl overflow-hidden border border-white/60 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
+                >
+                  {/* Logo Section */}
+                  <div className={`relative p-8 bg-gradient-to-br ${partner.color} flex items-center justify-center min-h-[180px]`}>
+                    <div className="absolute inset-0 opacity-10">
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full blur-2xl"></div>
+                    </div>
+                    <div className="relative bg-white rounded-xl p-6 shadow-lg w-full">
+                      <img 
+                        src={partner.logo} 
+                        alt={`${partner.name} logo`}
+                        className="w-full h-20 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="p-6 bg-white/40 dark:bg-gray-800/40 flex flex-col flex-grow">
+                    <h3 className="text-xl font-display font-bold mb-3 text-bit-dark dark:text-white">
+                      {partner.name}
+                    </h3>
+                    <p className="text-sm text-bit-dark/70 dark:text-gray-400 leading-relaxed mb-4 flex-grow">
+                      {partner.description}
+                    </p>
+                    <a
+                      href={partner.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-bit-lavender hover:text-violet-600 font-bold text-sm transition-colors"
+                    >
+                      Learn More
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <br />
+            <br />
+            <br />
+          </div>
+
           {/* CTA Section */}
           <div className="mt-16 text-center">
             <div className="glass inline-block rounded-2xl p-8 border border-bit-lavender/30 dark:border-bit-lavender/50 shadow-lg bg-white/40 dark:bg-gray-800/40 backdrop-blur-md">
@@ -227,7 +288,7 @@ export function PartnersPage() {
                 Interested in Partnering?
               </h3>
               <p className="text-bit-dark/70 dark:text-gray-300 mb-6 max-w-lg">
-                We\'re always looking for organizations that share our mission to empower young coders.
+                We're always looking for organizations that share our mission to empower young coders.
               </p>
               <a
                 href="/#/contact"
