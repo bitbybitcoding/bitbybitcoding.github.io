@@ -228,6 +228,9 @@ export function PartnersPage() {
                 </div>
               ))}
             </div>
+            <br />
+            <br />
+            <br />
           </div>
 
           {/* Government Partners */}
