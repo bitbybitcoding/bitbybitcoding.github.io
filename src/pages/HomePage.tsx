@@ -1,8 +1,10 @@
 import { HeroSection } from '../sections/HeroSection';
 import { StatsSection } from '../sections/StatsSection';
+import { ImpactSection } from '../sections/ImpactSection';
+import { TestimonialsSection } from '../sections/TestimonialsSection';
 import { AboutSection } from '../sections/AboutSection';
 import { PathwaysPreview } from '../sections/PathwaysPreview';
-import { MentorsSection } from '../sections/MentorsSection';
+import { PartnersWallSection } from '../sections/PartnersWallSection';
 import { NewsletterSection } from '../sections/NewsletterSection';
 
 export function HomePage() {
@@ -10,13 +12,13 @@ export function HomePage() {
     <div className="flex flex-col">
       <HeroSection />
       <StatsSection />
+      <ImpactSection />
+      <TestimonialsSection />
       <div className="aboutsection">
         <AboutSection />
       </div>
       <PathwaysPreview />
-      <div className="mentorssection">
-        <MentorsSection />
-      </div>
+      <PartnersWallSection />
       <NewsletterSection />
     </div>
   );

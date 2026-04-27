@@ -44,6 +44,7 @@ export function Footer() {
               <li><Link to="/pathways" className="hover:text-bit-lavender transition-colors">AI &amp; Machine Learning</Link></li>
               <li><Link to="/pathways" className="hover:text-bit-lavender transition-colors">C++ &amp; Algorithms</Link></li>
               <li><Link to="/pathways" className="hover:text-bit-lavender transition-colors">#GirlsWhoCode</Link></li>
+              <li><Link to="/impact" className="hover:text-bit-lavender transition-colors">Impact</Link></li>
             </ul>
           </div>
 
@@ -60,8 +61,11 @@ export function Footer() {
                   About Us
                 </a>
               </li>
+              <li><Link to="/team" className="hover:text-bit-lavender transition-colors">Team</Link></li>
               <li><Link to="/tutor" className="hover:text-bit-lavender transition-colors">Volunteer</Link></li>
               <li><Link to="/partners" className="hover:text-bit-lavender transition-colors">Partners</Link></li>
+              <li><Link to="/press" className="hover:text-bit-lavender transition-colors">Press</Link></li>
+              <li><Link to="/gallery" className="hover:text-bit-lavender transition-colors">Gallery</Link></li>
               <li><Link to="/contact" className="hover:text-bit-lavender transition-colors">Contact</Link></li>
             </ul>
           </div>

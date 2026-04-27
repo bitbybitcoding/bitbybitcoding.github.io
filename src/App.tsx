@@ -9,6 +9,10 @@ import { ApplicationPage } from './pages/ApplicationPage';
 import { TutorPage } from './pages/TutorPage';
 import { PartnersPage } from './pages/PartnersPage';
 import { ContactPage } from './pages/ContactPage';
+import { TeamPage } from './pages/TeamPage';
+import { PressPage } from './pages/PressPage';
+import { GalleryPage } from './pages/GalleryPage';
+import { ImpactPage } from './pages/ImpactPage';
 import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
 import { Consent } from './pages/Consent';
@@ -33,6 +37,10 @@ function App() {
             <Route path="/tutor" element={<TutorPage />} />
             <Route path="/partners" element={<PartnersPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/press" element={<PressPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/impact" element={<ImpactPage />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/consent" element={<Consent />} />
