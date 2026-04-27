@@ -52,9 +52,9 @@ export function Navigation() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/#about', scrollTo: 'about' },
+    { name: 'Impact', path: '/#/impact' },
     { name: 'Team', path: '/#/team' },
     { name: 'Pathways', path: '/#/pathways' },
-    { name: 'Impact', path: '/#/impact' },
     { name: 'Gallery', path: '/#/gallery' },
     { name: 'Blog', path: '/#/blog' },
     { name: 'Questions?', path: '/#/faq' },
