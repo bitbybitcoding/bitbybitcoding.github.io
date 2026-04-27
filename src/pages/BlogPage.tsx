@@ -1,5 +1,6 @@
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Search } from 'lucide-react';
 
 const blogPosts = [
   {
@@ -10,12 +11,34 @@ const blogPosts = [
     date: 'January 2026',
     readTime: '8 min read',
     category: 'Opinion',
+    tags: ['#student-stories', '#equity', '#events'],
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
     slug: 'why-we-founded-bit-by-bit',
   },
 ];
 
 export function BlogPage() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [activeTag, setActiveTag] = useState<string>('all');
+
+  const allTags = useMemo(() => {
+    const tags = blogPosts.flatMap((post) => post.tags);
+    return ['all', ...Array.from(new Set(tags))];
+  }, []);
+
+  const filteredPosts = useMemo(() => {
+    const query = searchTerm.trim().toLowerCase();
+    return blogPosts.filter((post) => {
+      const matchesTag = activeTag === 'all' || post.tags.includes(activeTag);
+      const matchesSearch =
+        query.length === 0 ||
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query) ||
+        post.tags.join(' ').toLowerCase().includes(query);
+      return matchesTag && matchesSearch;
+    });
+  }, [activeTag, searchTerm]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow py-16 px-6">
@@ -36,9 +59,37 @@ export function BlogPage() {
             </p>
           </div>
 
+          <div className="glass rounded-2xl p-5 border border-white/60 dark:border-gray-700 mb-10">
+            <div className="relative mb-4">
+              <Search className="w-4 h-4 text-bit-dark/50 dark:text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                placeholder="Search blog posts..."
+                className="w-full rounded-xl border border-bit-dark/10 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 pl-10 pr-3 py-2.5 text-sm text-bit-dark dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-bit-lavender/40"
+              />
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setActiveTag(tag)}
+                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${
+                    activeTag === tag
+                      ? 'bg-bit-lavender text-white'
+                      : 'bg-white/70 dark:bg-gray-800/70 text-bit-dark/70 dark:text-gray-300 border border-bit-dark/10 dark:border-gray-700 hover:border-bit-lavender/40'
+                  }`}
+                >
+                  {tag === 'all' ? 'All' : tag}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Blog Posts Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {filteredPosts.map((post) => (
               <Link 
                 key={post.id}
                 to={`/blog/${post.slug}`}
@@ -85,6 +136,9 @@ export function BlogPage() {
               </Link>
             ))}
           </div>
+          {filteredPosts.length === 0 && (
+            <p className="text-center text-bit-dark/60 dark:text-gray-400 mt-8">No posts match your current filters.</p>
+          )}
         </div>
       </main>
 

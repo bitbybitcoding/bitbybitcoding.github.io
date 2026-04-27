@@ -1,70 +1,5 @@
 import { ExternalLink } from 'lucide-react';
-
-const mainPartner = {
-  name: 'BAGUS Together',
-  description: 'BAGUS Together is a vibrant network of ground-up initiatives empowering communities across Singapore. As our key partner, they provide essential support and resources to help us reach more young learners.',
-  logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/bagus_together.png',
-  website: 'https://www.bagustogether.sg/about',
-  color: 'from-bit-lavender to-bit-red',
-};
-
-const imptPartners = [
-  {
-    name: 'SGPO',
-    description: 'The Singapore Government Partnerships Office (SGPO) helps every citizen and groundup group play a part in shaping our country\'s future, providing crucial support for our mission.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/sgpo.jpeg',
-    website: 'https://sgpo.gov.sg',
-    color: 'from-bit-turquoise to-bit-green',
-  },
-  {
-    name: '*SCAPE',
-    description: '*SCAPE is a unique blend of retail and community space, and a vibrant hub where youth gather to create, connect, and grow. As venue partner, they play an important role in the success of our sessions.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/scape.png',
-    website: 'https://www.scape.sg',
-    color: 'from-bit-red to-bit-lavender',
-  },
-  {
-    name: 'Educado SDC',
-    description: 'As a fellow groundup aiming to bring high-quality tuition to all secondary and JC students for free, Educado\'s mission aligns closely with ours.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/educado.jpeg',
-    website: 'https://sites.google.com/view/project-educado/home?authuser=0',
-    color: 'from-bit-lavender to-bit-turquoise',
-  },
-];
-
-const supportingPartners = [
-  {
-    name: 'NVPC',
-    description: 'National Volunteer & Philanthropy Centre champions strategic giving and volunteerism in Singapore, supporting our mission through the BAGUS network.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/nvpc.png',
-    website: 'https://nvpc.org.sg',
-    color: 'from-bit-turquoise to-bit-green',
-  },
-  {
-    name: 'Temasek Foundation',
-    description: 'Temasek Foundation supports sustainable and resilient communities. Their backing through BAGUS enables us to scale our impact.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/temasek_foundation.webp',
-    website: 'https://www.temasekfoundation.org.sg',
-    color: 'from-bit-red to-bit-lavender',
-  },
-  {
-    name: 'Tote Board',
-    description: 'As Singapore\'s primary funding agency for social causes, Tote Board provides crucial support for our educational programmes.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/tote_board.png',
-    website: 'https://www.toteboard.gov.sg',
-    color: 'from-bit-lavender to-bit-turquoise',
-  },
-];
-
-const govtPartners = [
-  {
-    name: 'MCCY',
-    description: 'The Ministry of Culture, Community and the Youth is responsible for the formulation and implementation of policies related to the arts, sports, youth and community in Singapore. They support us through SGPO and *SCAPE.',
-    logo: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/MCCY.jpeg',
-    website: 'https://www.mccy.gov.sg',
-    color: 'from-bit-turquoise to-bit-green',
-  },
-];
+import { governmentPartners, keyPartners, mainPartner, supportingPartners } from '@/data/partners';
 
 export function PartnersPage() {
   return (
@@ -137,7 +72,7 @@ export function PartnersPage() {
               Key Partners
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              {imptPartners.map((partner, index) => (
+              {keyPartners.map((partner, index) => (
                 <div 
                   key={index}
                   className="glass rounded-2xl overflow-hidden border border-white/60 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
@@ -239,7 +174,7 @@ export function PartnersPage() {
               Government Partners
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              {govtPartners.map((partner, index) => (
+              {governmentPartners.map((partner, index) => (
                 <div 
                   key={index}
                   className="glass rounded-2xl overflow-hidden border border-white/60 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"

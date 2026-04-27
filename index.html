@@ -3,8 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        if (window.location.hostname === 'bitbybitcoding.github.io') {
+          window.location.replace(
+            'https://bbbcoding.vercel.app' +
+              window.location.pathname +
+              window.location.search +
+              window.location.hash
+          );
+        }
+      })();
+    </script>
     <meta name="description" content="Bit by Bit Coding - Free, structured, multi-year coding pathways for Singaporean youth aged 10-18. Learn Python, AI/ML, and more." />
     <meta name="theme-color" content="#8C52FF" />
+    <meta property="og:title" content="Bit by Bit Coding" />
+    <meta property="og:description" content="Free, structured coding education for Singaporean youth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bbbcoding.vercel.app" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bit by Bit Coding" />
+    <meta name="twitter:description" content="Free, structured coding education for Singaporean youth." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/logo.png" />
+    <link rel="canonical" href="https://bbbcoding.vercel.app" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/logo.png" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/logo.png" />
     
     <!-- Google Consent Mode (Default to denied) -->
     <script>
