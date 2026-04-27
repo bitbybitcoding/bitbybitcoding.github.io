@@ -16,9 +16,9 @@ export function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-black leading-[1.05] tracking-tight mb-8 text-bit-dark dark:text-white drop-shadow-sm">
-          Empowering the Next Generation of{' '}
+          Opening the Doors of Coding Education for{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-bit-lavender via-bit-red to-bit-lavender bg-[length:200%_auto] animate-gradient">
-            Singaporean Coders
+            Every Youth
           </span>
         </h1>
 
