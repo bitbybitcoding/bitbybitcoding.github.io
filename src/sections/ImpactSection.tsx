@@ -14,6 +14,8 @@ const milestones = [
   'Ran inaugural March 2026 bootcamp',
   'Collected impact data from first cohort (n=20)',
   'Built institutional support through BAGUS partner ecosystem',
+  'Partnered with SGPO and *SCAPE to scale impact',
+  'Ran inaugural Python term',
 ];
 
 export function ImpactSection() {
