@@ -40,6 +40,38 @@ export const keyPartners: Partner[] = [
       "As a fellow groundup aiming to bring high-quality tuition to all secondary and JC students for free, Educado's mission aligns closely with ours.",
     logo: `${assetBase}/educado.jpeg`,
     website: 'https://sites.google.com/view/project-educado/home?authuser=0',
+    color: 'from-bit-turquoise to-bit-green',
+  },
+  {
+    name: 'Victoria Junior College',
+    description:
+      "The alma mater of many of our tutors, VJC provides the subject rigour that keeps us competitive. Computing teachers from VJC also advise on the curriculum.",
+    logo: `${assetBase}/vjc.png`,
+    website: 'https://www.victoriajc.moe.edu.sg',
+    color: 'from-bit-lavender to-bit-turquoise',
+  },
+  {
+    name: "Stick 'Em",
+    description:
+      "Stick 'Em is a Singaporean start-up aiming to make STEM education accessible to all. They are our main partner for our robotics branch.",
+    logo: `${assetBase}/stickem.jpeg`,
+    website: 'https://stickem.sg',
+    color: 'from-bit-red to-bit-lavender',
+  },
+  {
+    name: 'CSM Academy International',
+    description:
+      "CSM Academy offers courses to working professionals and students. As venue partner, they play a key role in the success of our sessions.",
+    logo: `${assetBase}/csm_academy.png`,
+    website: 'https://csmacademy.edu.sg',
+    color: 'from-bit-turquoise to-bit-green',
+  },
+  {
+    name: 'Soristic',
+    description:
+      "Soristic is a social impact firm aiming to bring resources to the groundups and charities that need it the most. They provide key support in navigating the grant landscape.",
+    logo: `${assetBase}/soristic.jpeg`,
+    website: 'https://soristic.asia',
     color: 'from-bit-lavender to-bit-turquoise',
   },
 ];
@@ -76,9 +108,17 @@ export const governmentPartners: Partner[] = [
     name: 'MCCY',
     description:
       'The Ministry of Culture, Community and the Youth is responsible for the formulation and implementation of policies related to the arts, sports, youth and community in Singapore. They support us through SGPO and *SCAPE.',
-    logo: `${assetBase}/MCCY.jpeg`,
+    logo: `${assetBase}/MCCY_profile.png`,
     website: 'https://www.mccy.gov.sg',
     color: 'from-bit-turquoise to-bit-green',
+  },
+  {
+    name: 'MSF',
+    description:
+      'The Ministry of Social and Family Development is responsible for the formulation and implementation of policies related to the community infrastructure, programmes and services in Singapore. They partner us to deliver our programmes to youths from less privileged backgrounds.',
+    logo: `${assetBase}/msf.png`,
+    website: 'https://www.msf.gov.sg',
+    color: 'from-bit-red to-bit-lavender',
   },
 ];
 
