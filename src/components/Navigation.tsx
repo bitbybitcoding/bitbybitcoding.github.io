@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './ThemeToggle';
+import { SiteSearch } from './SiteSearch';
 
 function AnnouncementBanner() {
   const [visible, setVisible] = useState(true);
@@ -122,11 +123,13 @@ export function Navigation() {
                 Apply Now
               </Button>
             </Link>
+            <SiteSearch />
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle />
+            <SiteSearch />
             <button
               className="text-bit-dark dark:text-gray-300 p-2"
               onClick={() => setIsOpen(!isOpen)}

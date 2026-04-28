@@ -12,13 +12,13 @@ export function HomePage() {
     <div className="flex flex-col">
       <HeroSection />
       <StatsSection />
+      <PartnersWallSection />
       <ImpactSection />
       <TestimonialsSection />
       <div className="aboutsection">
         <AboutSection />
       </div>
       <PathwaysPreview />
-      <PartnersWallSection />
       <NewsletterSection />
     </div>
   );

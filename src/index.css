@@ -212,9 +212,10 @@
 
   .partners-marquee {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     width: max-content;
-    animation: partners-marquee 28s linear infinite;
+    animation: partners-marquee 36s linear infinite;
+    will-change: transform;
   }
 
   .gallery-masonry {
@@ -228,6 +229,16 @@
     position: relative;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     box-shadow: 0 8px 24px -20px rgba(0, 0, 0, 0.3);
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+
+  .gallery-card img {
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
   .gallery-card::after {
@@ -242,7 +253,7 @@
   }
 
   .gallery-card:hover {
-    transform: translateY(-4px);
+    transform: translate3d(0, -4px, 0);
     box-shadow: 0 20px 35px -18px rgba(140, 82, 255, 0.45);
   }
 
@@ -265,9 +276,9 @@
 
 @keyframes partners-marquee {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }

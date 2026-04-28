@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       (function () {
-        if (window.location.hostname === 'bitbybitcoding.github.io') {
-          window.location.replace(
-            'https://bbbcoding.vercel.app' +
-              window.location.pathname +
-              window.location.search +
-              window.location.hash
-          );
+        const { hostname, pathname, search, hash } = window.location;
+        const isLegacyHost = hostname === 'bitbybitcoding.github.io';
+        const hasHashRoute = hash.startsWith('#/');
+        const targetOrigin = isLegacyHost ? 'https://bbbcoding.vercel.app' : window.location.origin;
+        const route = hasHashRoute ? hash.slice(1) : `${pathname}${search}${hash}`;
+        const normalizedRoute = route === '/' ? '' : route;
+        const targetUrl = normalizedRoute ? `${targetOrigin}/#${normalizedRoute}` : `${targetOrigin}/`;
+
+        if (isLegacyHost) {
+          window.location.replace(targetUrl);
+          return;
+        }
+
+        if (!hasHashRoute && pathname !== '/' && normalizedRoute) {
+          window.location.replace(targetUrl);
         }
       })();
     </script>

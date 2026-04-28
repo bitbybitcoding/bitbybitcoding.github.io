@@ -66,14 +66,14 @@ export function ApplicationPage() {
             {/* Tally Form Embed - Add wrapper for better visibility */}
             <div className="flex-grow bg-white/80 dark:bg-gray-800/80 rounded-xl p-4">
               <iframe 
-                data-tally-src="https://tally.so/embed/gD0zMl?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" 
+                data-tally-src="https://tally.so/embed/rjLWOv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" 
                 loading="lazy" 
                 width="100%" 
-                height="500" 
+                height="1950" 
                 frameBorder="0" 
                 marginHeight={0} 
                 marginWidth={0} 
-                title="Bit by Bit Coding — Register"
+                title="Bit by Bit Coding Term 2 — Register"
                 className="w-full"
               ></iframe>
             </div>
