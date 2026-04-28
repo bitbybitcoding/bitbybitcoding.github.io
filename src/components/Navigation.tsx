@@ -52,13 +52,13 @@ export function Navigation() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/#about', scrollTo: 'about' },
-    { name: 'Impact', path: '/#/impact' },
-    { name: 'Team', path: '/#/team' },
-    { name: 'Pathways', path: '/#/pathways' },
-    { name: 'Gallery', path: '/#/gallery' },
-    { name: 'Blog', path: '/#/blog' },
-    { name: 'Questions?', path: '/#/faq' },
+    { name: 'About', path: '/', scrollTo: 'about' },
+    { name: 'Impact', path: '/impact' },
+    { name: 'Team', path: '/team' },
+    { name: 'Pathways', path: '/pathways' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Questions?', path: '/faq' },
   ];
 
   const handleNavClick = (link: typeof navLinks[0], e: React.MouseEvent) => {
@@ -79,8 +79,8 @@ export function Navigation() {
   };
 
   const isActive = (path: string) => {
-    if (path.startsWith('/#')) return location.pathname === '/' && location.hash === path.slice(1);
-    return location.pathname === path;
+    if (path === '/') return location.pathname === '/';
+    return location.pathname === path || location.pathname.startsWith(path + '/');
   };
 
   return (
@@ -104,9 +104,9 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.path}
+                to={link.path}
                 onClick={(e) => handleNavClick(link, e)}
                 className={`text-base font-medium transition-colors cursor-pointer ${
                   isActive(link.path)
@@ -115,7 +115,7 @@ export function Navigation() {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <ThemeToggle />
             <Link to="/apply">
@@ -144,10 +144,10 @@ export function Navigation() {
           <div className="md:hidden glass-panel border-t border-white/40 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95">
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.path}
-                  onClick={(e) => handleNavClick(link, e)}
+                  to={link.path}
+                  onClick={(e) => { handleNavClick(link, e); setIsOpen(false); }}
                   className={`text-base font-medium py-2 transition-colors cursor-pointer ${
                     isActive(link.path)
                       ? 'text-bit-lavender font-bold'
@@ -155,7 +155,7 @@ export function Navigation() {
                   }`}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <Link to="/apply" onClick={() => setIsOpen(false)}>
                 <Button className="w-full bg-bit-lavender hover:bg-bit-lavender/90 text-white font-bold shadow-lavender">
