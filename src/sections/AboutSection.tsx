@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Check } from 'lucide-react';
 
 const features = [
@@ -18,7 +19,26 @@ const features = [
   },
 ];
 
+const carouselImages = [
+  'bootcamp_photo.jpeg',
+  'kevin_teaching.jpeg',
+  'suki_teaching_whiteboard.jpeg',
+  'tutor_debate_session.jpeg',
+  'zoomed_in_kevin_teaching.jpeg',
+];
+
+const assetBase = 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets';
+
 export function AboutSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 4200);
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <section className="py-16 px-6 relative" id="about">
       <div className="max-w-7xl mx-auto">
@@ -27,11 +47,17 @@ export function AboutSection() {
           <div className="w-full lg:w-1/2 relative group">
             <div className="absolute -inset-2 bg-gradient-to-r from-bit-lavender to-bit-turquoise rounded-2xl blur-lg opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative w-full aspect-video rounded-xl bg-white dark:bg-gray-800 overflow-hidden border border-white/50 dark:border-gray-700 shadow-inner">
-              <img 
-                src="https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/bootcamp_photo.jpeg" 
-                alt="BbB March Bootcamp Photo"
-                className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
-              />
+              {carouselImages.map((image, index) => (
+                <img
+                  key={image}
+                  src={`${assetBase}/${image}`}
+                  alt="Bit by Bit Coding session"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                    index === activeIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  aria-hidden={index !== activeIndex}
+                />
+              ))}
             </div>
           </div>
 
