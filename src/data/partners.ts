@@ -74,6 +74,22 @@ export const keyPartners: Partner[] = [
     website: 'https://soristic.asia',
     color: 'from-bit-lavender to-bit-turquoise',
   },
+  {
+    name: "WeWork",
+    description:
+      "WeWork is a shared working space for many professionals in the heart of Singapore. As venue partner, they play a key role in the success of our sessions.",
+    logo: `${assetBase}/wework.jpeg`,
+    website: 'https://www.wework.com/en-GB',
+    color: 'from-bit-red to-bit-lavender',
+  },
+  {
+    name: 'Dibs',
+    description:
+      "Dibs is a booking service company with agent integrations that allows for quick and seamless bookings. As bookings partner, they provide our event management software.",
+    logo: `${assetBase}/dibs.png`,
+    website: 'https://www.usedibs.com',
+    color: 'from-bit-turquoise to-bit-green',
+  },
 ];
 
 export const supportingPartners: Partner[] = [
