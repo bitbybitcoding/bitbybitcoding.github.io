@@ -23,7 +23,7 @@ const getExpertiseColor = (skill: string): string => {
 const mentors = [
   {
     name: 'Hongpeng Wei',
-    role: 'President & Co-Founder of Bit by Bit, Ex-Computing @ VJC',
+    role: 'President & Co-Founder; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/hongpenggg/hongpenggg.github.io/master/.github/assets/hongpeng.jpeg',
     quote: "I love seeing students' eyes light up when their code finally runs. I want to help every youth find their superpower in coding.",
     expertise: ['Python', 'AI'],
@@ -33,7 +33,7 @@ const mentors = [
   },
   {
     name: 'Brian Lim',
-    role: 'VP & Co-Founder of Bit by Bit, Ex-Computing @ VJC',
+    role: 'VP, COO & Co-Founder; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/brian_profile.jpeg',
     quote: "I've always believed that the best way to master a craft is ton share it. BbB is my creative space where technical expertise meets my love for inspiring others.",
     expertise: ['Python', 'ML'],
@@ -43,7 +43,7 @@ const mentors = [
   },
   {
     name: 'Papangkorn Wangchochedkun',
-    role: 'Head of Curriculum, AI/ML @ Bit by Bit, CS @ NUS',
+    role: 'Head of Curriculum and AI/ML; CS @ NUS',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/pann_profile.jpeg',
     quote: "Just a guy who emjoys algorithmic problem solving.",
     expertise: ['Python', 'AI'],
@@ -53,7 +53,7 @@ const mentors = [
   },
   {
     name: 'Yixiang Fan',
-    role: 'Head of Python @ Bit by Bit, Ex-Computing @ HCI',
+    role: 'Head of Python; Ex-Computing @ HCI',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/yixiang_profile.jpeg',
     quote: "I enjoy the moment when I get the desired output, when the countless hours spent working and remedying the code proved to be worth it.",
     expertise: ['Python', 'SQL'],
@@ -63,7 +63,7 @@ const mentors = [
   },
   {
     name: 'Raghav Sriram',
-    role: 'Python, Robotics @ Bit by Bit, Quantum Computing, Ex-Computing @ VJC',
+    role: 'Python, Robotics and Quantum Computing; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/raghav_profile.jpeg',
     quote: "Quantum Computing Researcher & Hardware Security Engineer who loves Monster Energy, motorbikes and lockpicking.",
     expertise: ['C++', 'Cybersecurity'],
@@ -73,7 +73,7 @@ const mentors = [
   },
   {
     name: 'Apicha Maneerat',
-    role: 'Python @ Bit by Bit, Maths & CS @ NUS',
+    role: 'Python; Maths & CS @ NUS',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/suki_profile.jpeg',
     quote: "The most elegant solutions in computer science and life are often the simplest. I want to help every student grasp how technology truly works, so they can find the simple path to solving any challenge.",
     expertise: ['Python', 'Algorithms'],
@@ -83,7 +83,7 @@ const mentors = [
   },
   {
     name: 'Neil Bhandari',
-    role: 'Python @ Bit by Bit, Ex-Computing @ VJC',
+    role: 'Python; Ex-Computing @ VJC',
     image: 'https://picsum.photos/400',
     quote: "Building great tech isn't just about code; it's about solving real user problems. I help students see the big picture.",
     expertise: ['Python', 'ML'],
@@ -93,7 +93,7 @@ const mentors = [
   },
   {
     name: 'Ashton Too',
-    role: 'Python @ Bit by Bit, Ex-Computing @ VJC',
+    role: 'Python; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/ashton_profile.jpeg',
     quote: "Building games is my cup of tea. I look forward to sharing my knowledge in it.",
     expertise: ['Python', 'C#'],
@@ -103,7 +103,7 @@ const mentors = [
   },
   {
     name: 'Nicholas Yeo',
-    role: 'Python @ Bit by Bit, Ex-Computing @ VJC',
+    role: 'Python; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/nicholas_profile.jpeg',
     quote: "never played tag because I knew I was it",
     expertise: ['Python', 'AI'],
@@ -113,7 +113,7 @@ const mentors = [
   },
   {
     name: 'Kevin Chua',
-    role: 'Python @ Bit by Bit, Ex-Computing @ VJC',
+    role: 'Python; Ex-Computing @ VJC',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/kevin_profile.jpeg',
     quote: "Computing doesn't have to always be a boring 6-7 hour long lecture to sit through, with me it'll be fun!",
     expertise: ['Python', 'SQL'],
@@ -123,7 +123,7 @@ const mentors = [
   },
   {
     name: 'Chee Heng Seow',
-    role: 'Python @ Bit by Bit, Ex-Computing @ HCI',
+    role: 'Python; Ex-Computing @ HCI',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/cheeheng_profile.jpeg',
     quote: "I want to share my love for coding, and inspire the next batch to make their communities a better place.",
     expertise: ['Python', 'AI'],
@@ -133,7 +133,7 @@ const mentors = [
   },
   {
     name: 'Pratik Ghosh',
-    role: 'Python @ Bit by Bit, Ex-CS @ SP',
+    role: 'Python; Ex-CS @ SP',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/pratik_profile.jpeg',
     quote: "Knowledge is like power — it grows the more you share it.",
     expertise: ['Python', 'AI'],
@@ -143,7 +143,7 @@ const mentors = [
   },
   {
     name: 'Joel Lim',
-    role: 'Python @ Bit by Bit, Ex-Cybersecurity @ NYP',
+    role: 'Python; Ex-Cybersecurity @ NYP',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/joel_profile.jpeg',
     quote: "Programming is the closest thing we have to real-world magic; I tutor because I want to help more people learn how to cast the spells.",
     expertise: ['Python', 'Security'],
@@ -153,7 +153,7 @@ const mentors = [
   },
   {
     name: 'Renae Gan',
-    role: 'C, C# @ Bit by Bit, Engineering @ NP',
+    role: 'C and C#; Engineering @ NP',
     image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/renae_profile.jpeg',
     quote: "Through teaching others how to code, I hope that I can provide the opportunity for students to derive satisfaction from seeing their code work wonders for them!",
     expertise: ['C#', 'SQL'],
