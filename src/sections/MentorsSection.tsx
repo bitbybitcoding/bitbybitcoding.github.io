@@ -84,7 +84,7 @@ const mentors = [
   {
     name: 'Neil Bhandari',
     role: 'Python; Ex-Computing @ VJC',
-    image: 'https://picsum.photos/400',
+    image: 'https://raw.githubusercontent.com/bitbybitcoding/bitbybitcoding.github.io/main/.github/assets/neil_profile.jpeg',
     quote: "Building great tech isn't just about code; it's about solving real user problems. I help students see the big picture.",
     expertise: ['Python', 'ML'],
     borderColor: 'border-t-bit-red',
