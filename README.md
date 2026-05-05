@@ -6,7 +6,6 @@ Official website for Bit by Bit Coding, built with React + TypeScript + Vite + T
 
 - Main domain: `https://bbbcoding.vercel.app`
 - Legacy GitHub Pages domain: `https://bitbybitcoding.github.io`
-- When the GitHub Pages domain is visited, the site auto-redirects to the Vercel domain and converts legacy paths into hash routes (e.g. `/privacy` → `/#/privacy`).
 - Direct path visits on the Vercel domain also normalize to hash routes so the HashRouter always resolves the correct page.
 
 ## Development
