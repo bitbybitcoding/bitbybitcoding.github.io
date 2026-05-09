@@ -19,12 +19,12 @@ function AnnouncementBanner() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
           </span>
           <p className="text-white text-xs sm:text-sm font-medium leading-snug">
-            Sign ups are open for Bit by Bit Coding&apos;s{' '} inaugural 12-week Python{' '}
+            Sign ups are open for Bit by Bit Coding&apos;s{' '} second 12-week Python{' '}
             <span className="font-bold">Language & Application</span>{' '}
             course!{' '}
           </p>
           <a
-            href="https://tally.so/r/gD0zMl"
+            href="https://tally.so/r/zxQW9E"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white text-bit-lavender text-xs font-bold hover:bg-white/90 hover:scale-[1.04] transition-all duration-150 shadow-md shrink-0"
