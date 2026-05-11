@@ -24,7 +24,7 @@ function AnnouncementBanner() {
             course!{' '}
           </p>
           <a
-            href="https://tally.so/r/zxQW9E"
+            href="https://tally.so/r/rjLWOv"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white text-bit-lavender text-xs font-bold hover:bg-white/90 hover:scale-[1.04] transition-all duration-150 shadow-md shrink-0"
