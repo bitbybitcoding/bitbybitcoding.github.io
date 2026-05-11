@@ -383,7 +383,7 @@ export function ChildPolicy() {
               </p>
               <div className="flex flex-col gap-3 mb-5">
                 {[
-                  { label: 'Child Protective Service (CPS), MSF', num: '1800-777-0000', note: '24-hour ComCare hotline' },
+                  { label: 'Child Protective Service (CPS), MSF', num: '1800-222-0000', note: '24-hour ComCare hotline' },
                   { label: 'Singapore Police Force', num: '999 (emergency) / 1800-255-0000 (non-emergency)', note: '' },
                   { label: 'National Anti-Violence and Sexual Harassment Helpline', num: '1800-777-0000', note: '' },
                 ].map((a, i) => (
