@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { BackgroundOrbs } from './components/BackgroundOrbs';
@@ -23,9 +24,20 @@ import { BlogPostPage } from './pages/BlogPostPage';
 import { Questions } from './pages/Questions';
 import { NotFoundPage } from './pages/NotFoundPage';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="relative min-h-screen flex flex-col">
         <BackgroundOrbs />
         <Navigation />

@@ -108,7 +108,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-bit-dark/5 dark:border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-bit-dark/50 dark:text-gray-500">
-            &copy; {new Date().getFullYear()} Bit by Bit Coding. All rights reserved.
+            &copy; {new Date().getFullYear()} Bit by Bit Coding. Opening the doors of coding education for all youth, bit by bit.
           </p>
           <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-xs text-bit-dark/50 dark:text-gray-500">
             <Link to="/privacy" className="hover:text-bit-dark dark:hover:text-gray-300 transition-colors">Privacy Policy</Link>

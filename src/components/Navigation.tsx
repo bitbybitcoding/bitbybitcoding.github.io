@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -47,6 +47,7 @@ function AnnouncementBanner() {
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAboutInView, setIsAboutInView] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -78,9 +79,35 @@ export function Navigation() {
     }
   };
 
-  const isActive = (path: string) => {
-    if (path === '/') return location.pathname === '/';
-    return location.pathname === path || location.pathname.startsWith(path + '/');
+  useEffect(() => {
+    if (location.pathname !== '/') {
+      return;
+    }
+
+    const aboutSection = document.getElementById('about');
+    if (!aboutSection) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsAboutInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0.35,
+      },
+    );
+
+    observer.observe(aboutSection);
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
+  const isActive = (link: (typeof navLinks)[number]) => {
+    if (link.scrollTo === 'about') {
+      return location.pathname === '/' && isAboutInView;
+    }
+    if (link.path === '/') return location.pathname === '/';
+    return location.pathname === link.path || location.pathname.startsWith(link.path + '/');
   };
 
   return (
@@ -109,7 +136,7 @@ export function Navigation() {
                 to={link.path}
                 onClick={(e) => handleNavClick(link, e)}
                 className={`text-base font-medium transition-colors cursor-pointer ${
-                  isActive(link.path)
+                  isActive(link)
                     ? 'text-bit-lavender font-bold'
                     : 'text-bit-dark/80 dark:text-gray-300 hover:text-bit-lavender'
                 }`}
@@ -149,7 +176,7 @@ export function Navigation() {
                   to={link.path}
                   onClick={(e) => { handleNavClick(link, e); setIsOpen(false); }}
                   className={`text-base font-medium py-2 transition-colors cursor-pointer ${
-                    isActive(link.path)
+                    isActive(link)
                       ? 'text-bit-lavender font-bold'
                       : 'text-bit-dark/80 dark:text-gray-300 hover:text-bit-lavender'
                   }`}

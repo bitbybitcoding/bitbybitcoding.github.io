@@ -53,7 +53,7 @@ export function ApplicationPage() {
         <div className="w-full max-w-6xl min-h-[650px] glass-panel bg-white/45 dark:bg-gray-900/45 border border-bit-lavender/30 dark:border-bit-lavender/50 rounded-[2rem] grid lg:grid-cols-12 overflow-hidden relative shadow-xl shadow-bit-lavender/5">
           
           {/* Left Column - Tally Form */}
-          <div className="lg:col-span-7 p-6 md:p-10 lg:p-12 flex flex-col relative bg-white/40 dark:bg-gray-800/40">
+          <div className="lg:col-span-7 p-6 md:p-10 lg:p-12 flex flex-col relative bg-white/40">
             <div className="mb-6">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 text-bit-dark dark:text-white tracking-tight">
                 Start Your Journey
@@ -64,7 +64,7 @@ export function ApplicationPage() {
             </div>
 
             {/* Tally Form Embed - Add wrapper for better visibility */}
-            <div className="flex-grow bg-white/80 dark:bg-gray-800/80 rounded-xl p-4">
+            <div className="flex-grow bg-white rounded-xl p-4">
               <iframe 
                 data-tally-src="https://tally.so/embed/rjLWOv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" 
                 loading="lazy" 
@@ -126,7 +126,7 @@ export function ApplicationPage() {
                 </h4>
                 <p className="text-sm text-white/90 leading-relaxed">
                   Our next Python cohort starts{' '}
-                  <span className="text-white font-bold border-b border-white/50">March 28th</span>. 
+                  <span className="text-white font-bold border-b border-white/50">July 18th</span>. 
                   Slots are limited to ensure quality mentorship ratios.
                 </p>
               </div>
@@ -137,7 +137,7 @@ export function ApplicationPage() {
 
       {/* Footer */}
       <footer className="w-full py-6 text-center text-bit-dark/50 dark:text-gray-500 text-sm relative z-10">
-        <p>&copy; {new Date().getFullYear()} Bit by Bit Coding. A Non-Profit Organization.</p>
+        <p>&copy; {new Date().getFullYear()} Bit by Bit Coding. Opening the doors of coding education for all youth, bit by bit.</p>
       </footer>
     </div>
   );

@@ -228,10 +228,8 @@ export function PathwaysPage() {
       {/* Footer Note */}
       <section className="text-center py-10 border-t border-slate-200/60 dark:border-gray-800 mt-auto">
         <p className="text-bit-dark/50 dark:text-gray-500 text-sm font-medium">
-          &copy; {new Date().getFullYear()} Bit by Bit Coding. Singapore.{' '}
-          <br className="sm:hidden" />
+          &copy; {new Date().getFullYear()} Bit by Bit Coding. Opening the doors of coding education for all youth, bit by bit.
         </p>
-        <p className="text-bit-dark/50 dark:text-gray-500 text-sm font-medium">Democratising coding education, bit by bit.</p>
       </section>
     </div>
   );
