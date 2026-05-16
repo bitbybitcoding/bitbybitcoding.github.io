@@ -81,13 +81,11 @@ export function Navigation() {
 
   useEffect(() => {
     if (location.pathname !== '/') {
-      setIsAboutInView(false);
       return;
     }
 
     const aboutSection = document.getElementById('about');
     if (!aboutSection) {
-      setIsAboutInView(false);
       return;
     }
 

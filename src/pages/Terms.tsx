@@ -186,8 +186,7 @@ export function Terms() {
       </main>
 
       <footer className="w-full py-6 text-center text-bit-dark/50 dark:text-gray-500 text-sm relative z-10">
-        <p>&copy; {new Date().getFullYear()} Bit by Bit Coding.</p>
-        <p>Democratising coding education, bit by bit.</p>
+        <p>&copy; {new Date().getFullYear()} Bit by Bit Coding. Opening the doors of coding education for all youth, bit by bit.</p>
       </footer>
     </div>
   );
