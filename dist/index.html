@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       (function () {
-        const { hostname, pathname, search, hash } = window.location;
-        const isLegacyHost = hostname === 'bitbybitcoding.github.io';
-        const hasHashRoute = hash.startsWith('#/');
-        const targetOrigin = isLegacyHost ? 'https://bbbcoding.vercel.app' : window.location.origin;
-        const route = hasHashRoute ? hash.slice(1) : `${pathname}${search}${hash}`;
-        const normalizedRoute = route === '/' ? '' : route;
-        const targetUrl = normalizedRoute ? `${targetOrigin}/#${normalizedRoute}` : `${targetOrigin}/`;
-
-        if (isLegacyHost) {
-          window.location.replace(targetUrl);
-          return;
+        // Only redirect if coming from the old GitHub Pages domain.
+        // Preserve the full path — do NOT convert to hash routes.
+        if (window.location.hostname === 'bitbybitcoding.github.io') {
+          var path = window.location.pathname + window.location.search + window.location.hash;
+          window.location.replace('https://bbbcoding.vercel.app' + path);
         }
-
-        if (!hasHashRoute && pathname !== '/' && normalizedRoute) {
-          window.location.replace(targetUrl);
+        // If someone somehow has a legacy /#/path bookmark, clean it up.
+        else if (window.location.hash.startsWith('#/')) {
+          window.location.replace(window.location.hash.slice(1));
         }
       })();
     </script>
@@ -61,7 +55,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Bit by Bit Coding - Opening the doors to coding education for every youth</title>
-    <script type="module" crossorigin src="/assets/index-T_MQ2oo1.js"></script>
+    <script type="module" crossorigin src="/assets/index-Bz0nJoYP.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DlOoaTX-.css">
   </head>
   <body>
