@@ -13,15 +13,15 @@ const sections = [
     questions: [
       {
         q: 'What is Bit by Bit Coding?',
-        a: "Bit by Bit Coding is a free, multi-year coding education programme for Singaporean youth aged 13–18. We provide rigorous, structured coding pathways that go beyond what's typically offered — from Python fundamentals into real industry tools like Flask and SQL, and eventually into C, Java, and robotics. We're a recognised ground-up under the BAGUS Together initiative, supported by NVPC, Temasek Foundation, and Tote Board.",
+        a: "Bit by Bit Coding is a free, multi-year coding education programme for Singaporean youth aged 13–18. We provide rigorous, structured coding pathways that go beyond what's typically offered — from Python fundamentals into real industry tools like Flask and SQL, and eventually into C, Java, and robotics. We're a recognised ground-up under the BAGUS Together initiative, supported by NVPC, Temasek Foundation, and Tote Board. We partner with SGPO and *SCAPE to deliver our lessons at scale and at the lowest cost.",
       },
       {
         q: 'Why is it free?',
-        a: 'Because we believe learning to code is a right, not a privilege. Advanced coding education in Singapore is largely locked behind enrichment fees. We exist to change that — for every young person who wants to learn, regardless of household income or background.',
+        a: 'Because we believe learning to code is a right, not a privilege. Advanced coding education in Singapore is largely locked behind enrichment fees. We exist to change that — for every young person who wants to learn, regardless of household income or background. You will not be asked to pay a fee. Ever.',
       },
       {
         q: 'Who runs Bit by Bit Coding?',
-        a: "We're a student-led team of volunteers — ex- and current computing students who remember what it felt like to want to learn but not have access. We're guided by experienced computing educators and a coding education professor at Cornell University.",
+        a: "We're a student-led team of volunteers — ex- and current computing students, teachers and industry professionals who remember what it felt like to want to learn but not have access. We're guided by experienced computing educators and a coding education professor at Cornell University.",
       },
     ],
   },
@@ -33,11 +33,15 @@ const sections = [
     questions: [
       {
         q: 'What is the Bootcamp?',
-        a: "The Bootcamp is Bit by Bit's first in-person, hands-on lesson lasting three hours. It lets prospective students learn more about Bit by Bit and our mission, experience our teaching style and pedagogy, and learn introductory Python — tackling micro-challenges that will ready them for our 12-week term.",
+        a: "The Bootcamp is Bit by Bit's in-person, hands-on lesson lasting from three to six hours. It lets prospective students learn more about Bit by Bit and our mission, experience our teaching style and pedagogy, and learn introductory Python — tackling micro-challenges that will ready them for our formal modules in the Python core.",
       },
       {
         q: "When is Bootcamp '26?",
-        a: "This year's Bootcamp will be held on 28 March 2026, from 10 am to 1 pm, at CSM Academy International — just a 5-minute walk from Aljunied MRT. Sign-ups are open now through the link in the banner at the top of this page.",
+        a: "This year's Bootcamp was held on 28 March 2026, from 10 am to 1 pm, at CSM Academy International — just a 5-minute walk from Aljunied MRT. Future bootcamps will be announced nearing the date.",
+      },
+      {
+        q: "I'm interested in hosting a bootcamp. How?",
+        a: "Partners who would like to bring a BbB Bootcamp to their organisations should reach out to us directly via email, Instagram, or the contact page. Please let us know the estimated size of attendance and the general background of the attendees when reaching out.",
       },
     ],
   },
@@ -49,7 +53,7 @@ const sections = [
     questions: [
       {
         q: 'Who can join?',
-        a: 'Any Singaporean youth aged 13–18 who is passionate about coding and wants to go further than what school covers. No prior experience is required for our introductory Python term — just curiosity and commitment.',
+        a: 'Any youth aged 13–18 residing in Singapore who is passionate about coding, self-directed, and wants to go further than what school covers. No prior experience is required for our introductory Python term — just curiosity and commitment. As we are a non-profit organisation at heart, we also look for students who are passionate about making a tangible impact on their communities with their coding skills.',
       },
       {
         q: 'Is it really completely free?',
@@ -57,7 +61,7 @@ const sections = [
       },
       {
         q: 'My child is in primary school. Can they join?',
-        a: "Not yet — our current programmes are designed for secondary and JC students (ages 13–18) who bring their own devices. We're working on expanding to younger students in a future term. If you would like to see our programme in your primary school, please contact us at info.bbbcoding@gmail.com.",
+        a: "Not yet — our current programmes are designed for secondary and JC students (ages 13–18) who bring their own devices. We're working on expanding to younger students in a future term. If you would like to see our programme in your primary school, please reach out to us.",
       },
       {
         q: 'How do I sign up?',
@@ -73,11 +77,11 @@ const sections = [
     questions: [
       {
         q: 'What will students learn?',
-        a: 'Our first term covers Python — from fundamentals to building real programmes. Students who complete the term progress to subsequent terms covering Flask (web development), SQL (databases), and beyond into AI/ML, C, Java, and robotics.',
+        a: 'We are currently only running our Python core, though we look to expand our course selection some time in 2027. Our core covers Python — from fundamentals to building real programmes. Students who complete the taster module progress to subsequent modules covering Python fundamentals, Flask (web development), SQL (databases), and beyond into AI/ML, C, Java, and robotics.',
       },
       {
         q: 'How long is each term?',
-        a: 'Each term is around 10-12 weeks, with sessions held on Saturdays.',
+        a: 'Each term is around 10-12 weeks, with sessions held on Saturdays. For specific information on the dates of the lessons, please reach out to us. We will release the details to students who have signed up.',
       },
       {
         q: 'What device does my child need to bring?',
@@ -85,7 +89,7 @@ const sections = [
       },
       {
         q: 'What if my child misses a session?',
-        a: "Please notify us in advance where possible. We understand life happens — but consistent attendance matters because each session builds on the last. Students who miss sessions repeatedly may have their place offered to another student on the waitlist.",
+        a: "Please notify us in advance where possible. We understand life happens — but consistent attendance matters because each session builds on the last. Students who miss sessions should complete the lesson materials on their own at home before the next session. Students who miss sessions repeatedly may have their place offered to another student on the waitlist.",
       },
       {
         q: 'Will there be homework?',
@@ -105,7 +109,7 @@ const sections = [
       },
       {
         q: 'What is your photography policy?',
-        a: "We may take photographs during sessions for BbB's social media and marketing materials. Photo consent is collected as part of registration. We do not publish clearly identifiable close-up photographs of individual students without explicit parental consent. The venue partner that we work with may also photograph the sessions for their own marketing purposes.",
+        a: "We may take photographs during sessions for BbB's social media and marketing materials. Photo consent is collected as part of registration. We do not publish clearly identifiable close-up photographs of individual students without explicit parental consent. The venue partner that we work with may also photograph the sessions for their own marketing purposes. In such cases, please reach out to the venue partners directly to request modification or deletion of photographs.",
       },
     ],
   },
@@ -117,7 +121,11 @@ const sections = [
     questions: [
       {
         q: 'I want to volunteer as a tutor. How?',
-        a: "We'd love to hear from you. Reach out to us at info.bbbcoding@gmail.com, use the Contact page on this website, or DM us on Instagram @bbbcoding.",
+        a: "We'd love to hear from you. Reach out to us at info.bbbcoding@gmail.com, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
+      },
+      {
+        q: 'I know someone who would like to work with you. How?',
+        a: "We'd love to hear from you too. Do get them to reach out to us at info.bbbcoding@gmail.com, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
       },
       {
         q: 'My organisation is interested in partnering with Bit by Bit. Who do I contact?',
