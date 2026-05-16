@@ -4,22 +4,22 @@ import { Button } from '@/components/ui/button';
 
 const pythonSubBranches = [
   {
-    title: 'Language & Application',
-    description: 'Master the syntax, logic, and core concepts of Python. Build your first command-line applications and understand algorithmic thinking. Learn important concepts that will take you everywhere.',
+    title: 'Python Taster',
+    description: 'New to Python? Start here! Our beginner-friendly 4-week Python basics taster module is a fun way for prospective students to learn Python fundamentals and build simple projects while deciding if they want to commit to the core.',
     status: 'active',
-    skills: ['Variables', 'Loops', 'Functions', 'Data Structures', 'OOP', 'Simple APIs', 'Algorithms', 'Time Complexity'],
+    skills: ['Variables', 'Operators', 'Input & Output', 'Loops', 'Control Flow', 'Simple Data Structures'],
   },
   {
-    title: 'Flask & Front-end',
-    description: 'Take your Python skills to the web. Learn how to build back-end services with Flask and connect them to HTML/CSS front-ends.',
+    title: 'Python: Beginner -> Intermediate',
+    description: "Students who clear the 4-week taster are invited to master the core concepts of Python in the next 12 weeks. Build your first command-line applications, learn how modularity is Python's superpower, and understand algorithmic thinking. At the end of the module, participate in a mini-hackathon to see how far you can take your learning.",
     status: 'coming-soon',
-    skills: ['Flask', 'HTML/CSS', 'APIs', 'Templates'],
+    skills: ['Functions', 'File I/O', 'CSV Module', 'Binary & Hexadecimal Encoding', 'Algorithms'],
   },
   {
-    title: 'SQL & Databases',
-    description: "Data is the new oil. Learn to design, query, and manage relational databases to power your applications. After SQL, you'll be ready to build your big, powerful apps.",
+    title: 'Python: Intermediate -> Advanced',
+    description: "Take your Python skills to the web. Learn how to build back-end services with Flask and connect them to HTML/CSS front-ends. Learn to design, query, and manage relational databases to power your applications. After this module, you'll be ready to build your big, powerful apps.",
     status: 'coming-soon',
-    skills: ['SQL', 'PostgreSQL', 'Database Design', 'ORM'],
+    skills: ['Flask', 'HTML', 'CSS', 'Django', 'SQLAlchemy', 'SQL', 'Database Design', 'ORM'],
   },
 ];
 
@@ -57,7 +57,7 @@ export function PathwaysPage() {
           </span>
         </h1>
         <p className="text-bit-dark/60 dark:text-gray-400 text-lg md:text-xl max-w-2xl font-body leading-relaxed">
-          From your first line of Python to building complex AI models. Our curriculum 
+          From your first line of Python to building complex learning models. Our curriculum 
           evolves with you, ensuring you master the fundamentals before tackling the future.
         </p>
       </section>
