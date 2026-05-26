@@ -17,7 +17,7 @@ const summaryCards = [
   {
     icon: Shield,
     title: 'Your Rights',
-    body: 'Under the PDPA: access, correction, withdrawal of consent, and deletion. Respond within 30 days. Contact info.bbbcoding@gmail.com.',
+    body: 'Under the PDPA: access, correction, withdrawal of consent, and deletion. Respond within 30 days. Contact info@bbbcoding.org.',
     gradient: 'from-bit-red to-bit-lavender',
   },
   {
@@ -106,7 +106,7 @@ export function Privacy() {
               </p>
               <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">
                 <strong>Data Protection Contact:</strong>{' '}
-                <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>
+                <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>
                 <br />
                 For the purposes of the PDPA, BbB is the organisation responsible for the personal data we collect.
               </p>
@@ -246,7 +246,7 @@ export function Privacy() {
               </ul>
               <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">
                 To report a suspected data security concern to BbB:{' '}
-                <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>.
+                <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>.
               </p>
             </Card>
 
@@ -272,7 +272,7 @@ export function Privacy() {
               </div>
               <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">
                 To exercise any of these rights, contact us at{' '}
-                <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>. We may need to verify your identity before fulfilling a request. We will respond within <strong>30 days</strong>.
+                <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>. We may need to verify your identity before fulfilling a request. We will respond within <strong>30 days</strong>.
               </p>
             </Card>
 
@@ -315,7 +315,7 @@ export function Privacy() {
                 For any questions, concerns, or requests relating to this Privacy Policy or BbB&apos;s data practices:
               </p>
               <ul className="space-y-1 text-bit-dark/70 dark:text-gray-400 text-sm mb-4">
-                <li><strong className="text-bit-dark dark:text-gray-200">Email:</strong>{' '}<a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a></li>
+                <li><strong className="text-bit-dark dark:text-gray-200">Email:</strong>{' '}<a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a></li>
                 <li><strong className="text-bit-dark dark:text-gray-200">Instagram:</strong>{' '}<a href="https://instagram.com/bbbcoding" target="_blank" rel="noopener noreferrer" className="text-bit-lavender hover:text-bit-red transition-colors">@bbbcoding</a></li>
                 <li><strong className="text-bit-dark dark:text-gray-200">Website:</strong>{' '}<a href="https://bitbybitcoding.github.io" target="_blank" rel="noopener noreferrer" className="text-bit-lavender hover:text-bit-red transition-colors">bitbybitcoding.github.io</a></li>
               </ul>
@@ -346,7 +346,7 @@ export function Privacy() {
               </div>
               <div className="pt-5 border-t border-bit-dark/10 dark:border-gray-700">
                 <p className="text-xs text-bit-dark/50 dark:text-gray-500 leading-relaxed">
-                  Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info.bbbcoding@gmail.com" className="hover:text-bit-lavender transition-colors">info.bbbcoding@gmail.com</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
+                  Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info@bbbcoding.org" className="hover:text-bit-lavender transition-colors">info@bbbcoding.org</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
                   This policy does not constitute legal advice. BbB recommends periodic independent legal review of this and all related documents.
                 </p>
               </div>

@@ -137,7 +137,7 @@ export function Terms() {
 
             <Card id="terms-7">
               <SH num="7" icon={Database} gradient="from-bit-lavender to-bit-red" title="Personal Data Protection" />
-              <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">BbB collects, uses, and stores personal data in accordance with Singapore&apos;s <strong>Personal Data Protection Act 2012 (PDPA)</strong> and BbB&apos;s{' '}<a href="/#/privacy" className="text-bit-lavender hover:text-bit-red transition-colors">Privacy Policy</a>. We will not sell personal data. Parents and guardians may request access to, correction of, or deletion of personal data by contacting <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>.</p>
+              <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">BbB collects, uses, and stores personal data in accordance with Singapore&apos;s <strong>Personal Data Protection Act 2012 (PDPA)</strong> and BbB&apos;s{' '}<a href="/#/privacy" className="text-bit-lavender hover:text-bit-red transition-colors">Privacy Policy</a>. We will not sell personal data. Parents and guardians may request access to, correction of, or deletion of personal data by contacting <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>.</p>
             </Card>
 
             <Card id="terms-8">
@@ -155,7 +155,7 @@ export function Terms() {
 
             <Card id="terms-10">
               <SH num="10" icon={Heart} gradient="from-bit-green to-emerald-400" title="Child Protection" />
-              <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">BbB is deeply committed to the safety and wellbeing of all participants. All tutors and administrators are required to comply with BbB&apos;s{' '}<a href="/#/child-policy" className="text-bit-lavender hover:text-bit-red transition-colors">Child Protection Policy</a>. Any concerns regarding the safety or wellbeing of a participant should be reported immediately to{' '}<a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>.</p>
+              <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed">BbB is deeply committed to the safety and wellbeing of all participants. All tutors and administrators are required to comply with BbB&apos;s{' '}<a href="/#/child-policy" className="text-bit-lavender hover:text-bit-red transition-colors">Child Protection Policy</a>. Any concerns regarding the safety or wellbeing of a participant should be reported immediately to{' '}<a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>.</p>
             </Card>
 
             <Card id="terms-11">
@@ -172,7 +172,7 @@ export function Terms() {
               <SH num="13" icon={FileText} gradient="from-bit-red to-pink-400" title="Contact" />
               <p className="text-bit-dark/80 dark:text-gray-300 leading-relaxed mb-3"><strong>Bit by Bit Coding</strong></p>
               <ul className="space-y-1 text-sm text-bit-dark/70 dark:text-gray-400">
-                <li>Email: <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a></li>
+                <li>Email: <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a></li>
                 <li>Instagram: <a href="https://instagram.com/bbbcoding" target="_blank" rel="noopener noreferrer" className="text-bit-lavender hover:text-bit-red transition-colors">@bbbcoding</a></li>
                 <li>Website: <a href="https://bitbybitcoding.github.io" target="_blank" rel="noopener noreferrer" className="text-bit-lavender hover:text-bit-red transition-colors">bitbybitcoding.github.io</a></li>
               </ul>

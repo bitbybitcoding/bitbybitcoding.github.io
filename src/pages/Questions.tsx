@@ -121,19 +121,19 @@ const sections = [
     questions: [
       {
         q: 'I want to volunteer as a tutor. How?',
-        a: "We'd love to hear from you. Reach out to us at info.bbbcoding@gmail.com, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
+        a: "We'd love to hear from you. Reach out to us at info@bbbcoding.org, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
       },
       {
         q: 'I know someone who would like to work with you. How?',
-        a: "We'd love to hear from you too. Do get them to reach out to us at info.bbbcoding@gmail.com, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
+        a: "We'd love to hear from you too. Do get them to reach out to us at info@bbbcoding.org, use the Tutor volunteer page on this website, or DM us on Instagram @bbbcoding.",
       },
       {
         q: 'My organisation is interested in partnering with Bit by Bit. Who do I contact?',
-        a: "Email us at info.bbbcoding@gmail.com or use the Contact page on this website. We're always open to conversations with schools, community organisations, and anyone who shares our mission.",
+        a: "Email us at info@bbbcoding.org or use the Contact page on this website. We're always open to conversations with schools, community organisations, and anyone who shares our mission.",
       },
       {
         q: "I have a question that isn't answered here.",
-        a: "Drop us a message on Instagram @bbbcoding, contact us through this website, or email info.bbbcoding@gmail.com. We'll get back to you.",
+        a: "Drop us a message on Instagram @bbbcoding, contact us through this website, or email info@bbbcoding.org. We'll get back to you.",
       },
     ],
   },
