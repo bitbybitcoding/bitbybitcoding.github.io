@@ -431,7 +431,7 @@ export function Conduct() {
             </div>
             <div className="mt-8 pt-6 border-t border-bit-dark/10 dark:border-gray-700">
               <p className="text-xs text-bit-dark/50 dark:text-gray-500 leading-relaxed">
-                Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info.bbbcoding@gmail.com" className="hover:text-bit-lavender transition-colors">info.bbbcoding@gmail.com</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
+                Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info@bbbcoding.org" className="hover:text-bit-lavender transition-colors">info@bbbcoding.org</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
                 This document does not constitute legal advice.
               </p>
             </div>

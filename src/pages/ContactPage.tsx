@@ -6,7 +6,7 @@ const contactInfo = [
     icon: Mail,
     title: 'Email Us',
     description: 'We typically respond within 24 hours',
-    detail: 'info.bbbcoding@gmail.com',
+    detail: 'info@bbbcoding.org',
     color: 'from-bit-lavender to-bit-red',
   },
   {

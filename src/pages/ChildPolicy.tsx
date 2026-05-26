@@ -69,7 +69,7 @@ const prohibitedConduct = [
 ];
 
 const approvedChannels = [
-  'BbB’s official email address (info.bbbcoding@gmail.com)',
+  'BbB’s official email address (info@bbbcoding.org)',
   'BbB’s official messaging or class management platform, as designated by the ExCo',
   'Parent or guardian group chats where a parent or guardian is present',
 ];
@@ -214,7 +214,7 @@ export function ChildPolicy() {
               <div className="p-5 rounded-2xl bg-bit-turquoise/5 dark:bg-cyan-900/20 border border-bit-turquoise/20 dark:border-cyan-900/40 mb-5">
                 <p className="text-sm font-bold text-bit-dark dark:text-white mb-1">Current CPO</p>
                 <p className="text-sm text-bit-dark/70 dark:text-gray-400 mb-2">The President of BbB, unless another ExCo member is formally designated in writing.</p>
-                <p className="text-sm text-bit-dark/70 dark:text-gray-400">Contact: <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a></p>
+                <p className="text-sm text-bit-dark/70 dark:text-gray-400">Contact: <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a></p>
               </div>
               <div className="flex flex-col gap-3">
                 <div className="p-4 rounded-xl bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800">
@@ -371,7 +371,7 @@ export function ChildPolicy() {
                   ))}
                 </ul>
                 <p className="mt-3 text-sm font-bold text-bit-red">
-                  Must be reported to the CPO (<a href="mailto:info.bbbcoding@gmail.com" className="underline hover:text-bit-dark dark:hover:text-white transition-colors">info.bbbcoding@gmail.com</a>) immediately, and no later than 24 hours after becoming aware of the concern.
+                  Must be reported to the CPO (<a href="mailto:info@bbbcoding.org" className="underline hover:text-bit-dark dark:hover:text-white transition-colors">info@bbbcoding.org</a>) immediately, and no later than 24 hours after becoming aware of the concern.
                 </p>
                 <p className="mt-2 text-xs text-bit-dark/60 dark:text-gray-400">
                   Failure to report a known or reasonably suspected concern is a serious breach of this policy and may result in immediate dismissal.
@@ -490,7 +490,7 @@ export function ChildPolicy() {
                       {i === 1 ? (
                         <>
                           Parents and guardians may at any time request access to, correction of, or deletion of their child’s personal data held by BbB, and may withdraw consent for any optional processing. To exercise these rights, email{' '}
-                          <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors">info.bbbcoding@gmail.com</a>.
+                          <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors">info@bbbcoding.org</a>.
                         </>
                       ) : item.body}
                     </p>
@@ -523,7 +523,7 @@ export function ChildPolicy() {
               </div>
               <div className="mt-8 pt-6 border-t border-bit-dark/10 dark:border-gray-700">
                 <p className="text-xs text-bit-dark/50 dark:text-gray-500 leading-relaxed">
-                  Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info.bbbcoding@gmail.com" className="hover:text-bit-lavender transition-colors">info.bbbcoding@gmail.com</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
+                  Bit by Bit Coding &nbsp;&bull;&nbsp; <a href="mailto:info@bbbcoding.org" className="hover:text-bit-lavender transition-colors">info@bbbcoding.org</a> &nbsp;&bull;&nbsp; @bbbcoding &nbsp;&bull;&nbsp; bitbybitcoding.github.io<br />
                   This policy does not constitute legal advice. BbB recommends periodic independent legal review of this and all related documents.
                 </p>
               </div>

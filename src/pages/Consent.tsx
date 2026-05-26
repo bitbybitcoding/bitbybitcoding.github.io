@@ -23,7 +23,7 @@ const sections = [
   ]},
   { id: 'E', title: 'Personal Data', icon: Database, color: 'from-bit-lavender to-bit-red', items: [
     { label: 'I consent to BbB collecting and using my child\'s personal data as described.', detail: 'I consent to Bit by Bit Coding collecting, using, and storing the personal data provided for programme administration, safety, communication, and impact reporting. I understand that BbB may share relevant personal data with its supporting bodies (including NVPC, Temasek Foundation, Tote Board, SGPO and *SCAPE) for funding and impact reporting purposes, and with the relevant Singapore authorities where required for safeguarding or by law. Personal data will be retained for the duration of my child’s participation and for a reasonable period thereafter in accordance with BbB\'s Privacy Policy and Singapore\'s Personal Data Protection Act 2012.', required: true },
-    { label: 'I consent to receiving programme-related communications from BbB.', detail: 'I consent to BbB contacting me via email and/or phone for programme updates, scheduling changes, and related communications. I may opt out at any time by contacting info.bbbcoding@gmail.com.', required: false },
+    { label: 'I consent to receiving programme-related communications from BbB.', detail: 'I consent to BbB contacting me via email and/or phone for programme updates, scheduling changes, and related communications. I may opt out at any time by contacting info@bbbcoding.org.', required: false },
   ]},
 ];
 
@@ -116,7 +116,7 @@ export function Consent() {
                   {section.id === 'D' && (
                     <div className="mt-5 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-200 dark:border-orange-800">
                       <p className="text-xs text-orange-700 dark:text-orange-300 leading-relaxed">
-                        ✦ This item is optional. If you do not consent, your child will still be welcome to participate fully in all sessions. Please note that the session venue may also take photographs for their own use. If you do not consent to any photography, please notify BbB separately at <a href="mailto:info.bbbcoding@gmail.com" className="underline">info.bbbcoding@gmail.com</a>.
+                        ✦ This item is optional. If you do not consent, your child will still be welcome to participate fully in all sessions. Please note that the session venue may also take photographs for their own use. If you do not consent to any photography, please notify BbB separately at <a href="mailto:info@bbbcoding.org" className="underline">info@bbbcoding.org</a>.
                       </p>
                     </div>
                   )}
@@ -136,7 +136,7 @@ export function Consent() {
           <div className="mt-12 text-center glass rounded-2xl p-8 border border-white/60 dark:border-gray-700 bg-white/40 dark:bg-gray-800/40">
             <p className="text-bit-dark/70 dark:text-gray-300 text-sm">
               Questions? Contact us at{' '}
-              <a href="mailto:info.bbbcoding@gmail.com" className="text-bit-lavender hover:text-bit-red transition-colors font-bold">info.bbbcoding@gmail.com</a>
+              <a href="mailto:info@bbbcoding.org" className="text-bit-lavender hover:text-bit-red transition-colors font-bold">info@bbbcoding.org</a>
               {' '}or on Instagram{' '}
               <a href="https://instagram.com/bbbcoding" target="_blank" rel="noopener noreferrer" className="text-bit-lavender hover:text-bit-red transition-colors font-bold">@bbbcoding</a>.
             </p>
